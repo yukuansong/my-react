@@ -136,6 +136,7 @@ function ProductCategoryRow(props) {
   )
 }
 
+
 ReactDOM.render(
   <FilterableProductTable products={PRODUCTS} />,
   document.getElementById('root')
