@@ -8,11 +8,11 @@ import registerServiceWorker from './registerServiceWorker';
 var PRODUCTS = [
   { category: 'Federal Grants', price: '$400.00', stocked: true, name: 'Federal Pell Grants' },
   { category: 'Federal Grants', price: '$750.00', stocked: true, name: 'Academic Competiveness Grant' },
-  { category: 'Federal Grants', price: '$4000', stocked: false, name: 'National SMART Grant' },
+  { category: 'Federal Grants', price: '$4000.00', stocked: false, name: 'National SMART Grant' },
   { category: 'State Grants', price: '$800.00', stocked: true, name: 'Central Alabama Community Foundation' },
   { category: 'State Grants', price: '$1200.00', stocked: false, name: 'Kansas Board Regents' },
   { category: 'State Grants', price: '$900.00', stocked: true, name: 'Michigan Tuition Grant' },
-  { category: 'Federal Grants', price: '$1000', stocked: false, name: 'Beninmin A Gilman Award' }
+  { category: 'Federal Grants', price: '$1000.00', stocked: false, name: 'Beninmin A Gilman Award' }
 ];
 
 class FilterableProductTable extends React.Component {
