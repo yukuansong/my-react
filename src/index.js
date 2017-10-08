@@ -6,7 +6,7 @@ import registerServiceWorker from './registerServiceWorker';
 
 
 var PRODUCTS = [
-  { category: 'Federal Grants', price: '$400.00', stocked: true, name: 'Federal Pell Grants' },
+  { category: 'Federal Grants', price: '$450.00', stocked: true, name: 'Federal Pell Grants' },
   { category: 'Federal Grants', price: '$750.00', stocked: true, name: 'Academic Competiveness Grant' },
   { category: 'Federal Grants', price: '$4000.00', stocked: false, name: 'National SMART Grant' },
   { category: 'State Grants', price: '$850.00', stocked: true, name: 'Central Alabama Community Foundation' },
