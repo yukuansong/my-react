@@ -8,10 +8,8 @@
     "react-scripts": "1.0.13"
   },
   "scripts": {
-    "start": "react-scripts start",
-    // "build": "react-scripts build",
-    // "test": "react-scripts test --env=jsdom",
-    // "eject": "react-scripts eject"
+    "start": "react-scripts start"
+
   },
   "devDependencies": {
     "eslint-config-google": "^0.9.1"
