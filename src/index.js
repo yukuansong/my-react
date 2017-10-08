@@ -6,13 +6,13 @@ import registerServiceWorker from './registerServiceWorker';
 
 
 var PRODUCTS = [
-  { category: 'Sporting Goods', price: '$49.99', stocked: true, name: 'Football' },
-  { category: 'Sporting Goods', price: '$9.99', stocked: true, name: 'Baseball' },
-  { category: 'Sporting Goods', price: '$29.99', stocked: false, name: 'Basketball' },
-  { category: 'Electronics', price: '$99.99', stocked: true, name: 'iPod Touch' },
-  { category: 'Electronics', price: '$399.99', stocked: false, name: 'iPhone 5' },
-  { category: 'Electronics', price: '$199.99', stocked: true, name: 'Nexus 7' },
-  { category: 'Sporting Goods', price: '$399.99', stocked: false, name: 'Git 7' }
+  { category: 'Federal Grants', price: '$400.00', stocked: true, name: 'Federal Pell Grants' },
+  { category: 'Federal Grants', price: '$750.00', stocked: true, name: 'Academic Competiveness Grant' },
+  { category: 'Federal Grants', price: '$4000', stocked: false, name: 'National SMART Grant' },
+  { category: 'State Grants', price: '$800.00', stocked: true, name: 'Central Alabama Community Foundation' },
+  { category: 'State Grants', price: '$1200.00', stocked: false, name: 'Kansas Board Regents' },
+  { category: 'State Grants', price: '$900.00', stocked: true, name: 'Michigan Tuition Grant' },
+  { category: 'Federal Grants', price: '$1000', stocked: false, name: 'Beninmin A Gilman Award' }
 ];
 
 class FilterableProductTable extends React.Component {
@@ -65,7 +65,7 @@ class SearchBar extends React.Component {
         <p>{this.props.searchText}</p>
         <input type="text" name="search" placeholder="search..." value={this.props.searchText} onChange={this.handleSearchTextChange}></input>
         <p>
-          <input type="checkbox" name="checkbox" checked={this.props.inStockOnly} onChange={this.handleInStockOnlyChange} />Only show the products in stocks.
+          <input type="checkbox" name="checkbox" checked={this.props.inStockOnly} onChange={this.handleInStockOnlyChange} />Only show the grants that were approved.
       </p>
       </form>
     )
@@ -104,7 +104,7 @@ function ProductTable(props) {
       <thead>
         <tr>
           <th>Name</th>
-          <th>Price</th>
+          <th>Amount</th>
         </tr>
       </thead>
       <tbody>
